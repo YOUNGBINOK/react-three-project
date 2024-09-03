@@ -3,7 +3,7 @@ import { Environment, CameraControls, OrbitControls } from "@react-three/drei";
 import { useRef } from "react";
 import { useControls } from "leva";
 import { House } from "./component/House";
-import "./App.css";
+import Dashboard from "./component/Dashboard";
 
 const Scene = () => {
   return (
@@ -17,9 +17,15 @@ const Scene = () => {
 
 const App = () => {
   return (
-    <Canvas>
-      <Scene />
-    </Canvas>
+    <>
+      <div>
+        <Dashboard />
+      </div>
+
+      {/* <Canvas>
+        <Scene />
+      </Canvas> */}
+    </>
   );
 };
 
